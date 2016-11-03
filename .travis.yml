@@ -10,4 +10,4 @@ script:
   - php vendor/bin/phpunit -c phpunit.xml.dist
 
 after_success:
-  - travis_retry php vendor/bin/coverall
+  - travis_retry php vendor/bin/coveralls

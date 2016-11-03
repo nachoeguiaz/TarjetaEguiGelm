@@ -59,13 +59,4 @@ class TarjetaTest extends TestCase {
     $this->assertEquals($tarjeta->saldo(), 308, "Me voy a dar una vuelta en bici papa");
     $this->assertEquals($medio->saldo(), 314, "Me voy a dar una vuelta en bici con medio");
   }
-  public function testBoleto(){
-    $boleto = new Boleto("2016/07/02 08:10", 0, 8, 304, "135 Azul", 2311);
-    $this->assertEquals($boleto->getcosto(), 8, "Costo de nomal");
-    $this->assertEquals($boleto->getfecha(), "2016/07/02 08:10", "La fechita");
-    $this->assertEquals($boleto->getlinea(), "135 Azul", "El trolebus que te tomaste");
-    $this->assertEquals($boleto->getid(), 2311, "23");
-    $this->assertEquals($boleto->getsaldo(), 304, "Cada vez mas caro el bondi");
-    $this->assertEquals($boleto->gettipo(), "Normal", "El 0 es un nro muy normal");
-  }
 }
